@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Posting Page</title>
+    <link rel="stylesheet" href="ideapost.css">
+    <script src="https://cdn.jsdelivr.net/npm/ckeditor5@35.0.0/build/ckeditor.js"></script> <!-- For Rich Text Editor -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Post a New Idea</h1>
+        <form id="idea-form">
+            <!-- Idea Title -->
+            <label for="title">Title of the Idea:</label>
+            <input type="text" id="title" name="title" required placeholder="Enter your idea title">
+
+            <!-- Category Selection -->
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="social-impact">Social Impact</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Detailed Description -->
+            <label for="description">Detailed Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <!-- Pitch Deck Upload -->
+            <label for="pitch-deck">Pitch Deck Upload (PDF, PPT, or YouTube Link):</label>
+            <input type="file" id="pitch-deck" name="pitch-deck" accept=".pdf, .ppt, .pptx, .txt">
+            <input type="url" id="youtube-link" name="youtube-link" placeholder="Or paste a YouTube link">
+
+            <!-- Funding Required -->
+            <label for="funding-required">Funding Required:</label>
+            <input type="number" id="funding-required" name="funding-required" required placeholder="Enter funding goal">
+
+            <label for="funding-breakdown">Funding Breakdown:</label>
+            <textarea id="funding-breakdown" name="funding-breakdown" placeholder="How will the funds be used?"></textarea>
+
+            <!-- Team Members -->
+            <label for="team-members">Team Members (optional):</label>
+            <input type="text" id="team-members" name="team-members" placeholder="Co-founders and roles">
+
+            <!-- Timeline & Milestones -->
+            <label for="timeline">Timeline & Milestones:</label>
+            <textarea id="timeline" name="timeline" placeholder="Estimated timelines and milestones"></textarea>
+
+            <!-- Logo Image Upload -->
+            <label for="logo">Logo/Image:</label>
+            <input type="file" id="logo" name="logo" accept="image/*">
+
+            <button type="submit">Submit Idea</button>
+        </form>
+    </div>
+
+    <script>
+        // Initialize Rich Text Editor for Description
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        // Form submission handling
+        const form = document.getElementById('idea-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            // You can send this data to a server via AJAX/fetch here
+            console.log("Form Submitted", formData);
+            alert("Your idea has been submitted successfully!");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up / Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="import" href="dashboard_afterlogin.html">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form">
+      <h2>Login</h2>
+
+      <button class="social-login" onclick="showLoginGoogle()">Login with Google</button>
+      <button class="social-login" onclick="showLoginFacebook()">Login with Facebook</button>
+      <button class="social-login" onclick="showLoginLinkedIn()">Login with LinkedIn</button>
+      <br>
+      <p>OR</p>
+      <form id="login-email-form" onsubmit="submitEmailLogin(event)">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+        <br>
+        <button type="button" onclick="login()">Log In</button>
+      </form>
+      <br>
+      <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+    </div>
+    
+    <!-- Google Login -->
+    <div class="form-container" id="google-form" style="display: none;">
+      <h2>Google Login</h2>
+      <form id="login-google-form" onsubmit="submitEmailLogin(event)">
+        <input type="email" id="login-google-email" placeholder="Email" required />
+        <input type="password" id="login-google-password" placeholder="Password" required />
+        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+        <br>
+        <button type="button" onclick="Googlelogin()">Login</button>
+      </form>
+      <br>
+      <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+    </div>
+    
+    <!-- Facebook Login-->
+    <div class="form-container" id="facebook-form" style="display: none;">
+      <h2>Facebook Login</h2>
+      <form id="login-facebook-form" onsubmit="submitEmailLogin(event)">
+        <input type="email" id="login-facebook-email" placeholder="Email" required />
+        <input type="password" id="login-facebook-password" placeholder="Password" required />
+        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+        <br>
+        <button type="button" onclick="Facebooklogin()">Login</button>
+      </form>
+      <br>
+      <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+    </div>
+    <!-- LinkedIn Login-->
+    <div class="form-container" id="linkedin-form" style="display: none;">
+      <h2>LinkedIn Login</h2>
+      <form id="login-linkedin-form" onsubmit="submitEmailLogin(event)">
+        <input type="email" id="login-linkedin-email" placeholder="Email" required />
+        <input type="password" id="login-linkedin-password" placeholder="Password" required />
+        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+        <br>
+        <button type="buttonbutton" onclick="LinkedInlogin()">Login</button>
+      </form>
+      <br>
+      <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+    </div>
+    
+    <!-- Create A new Account-->
+    <div class="form-container" id="sign-up-form" style="display: none;">
+      <h2>Sign Up</h2>
+
+      <form id="login-email-form" onsubmit="submitEmailLogin(event)">
+        <input type="text" class="input-field" placeholder="Full Name" name="fullName" required><br>
+        <input type="email" class="input-field" placeholder="Email Address" name="email" required><br>
+        <input type="text" class="input-field" placeholder="Username" name="username" required><br>
+        <input type="password" class="input-field" placeholder="Password" name="password" required><br>
+        <input type="password" class="input-field" placeholder="Confirm Password" name="confirmPassword" required><br>
+        <!--<a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>-->
+        <br>
+        <button type="button" onclick="signup()">Sign Up</button>
+      </form>
+      <br>
+      <p>OR</p>
+      <br>
+      
+      <button class="social-login" onclick="signUpWithGoogle()">Continue with Google</button>
+      <button class="social-login" onclick="signUpWithFacebook()">Continue with Facebook</button>
+      <button class="social-login" onclick="signUpWithLinkedIn()">Continue with LinkedIn</button>
+      
+      
+      <!--<p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>-->
+    </div>
+  </div>
+
+  <div id="role-selection" style="display: none;">
+    <h2>Choose Your Role</h2>
+    <button onclick="selectRole('creator')">Creator (Startup Enthusiast)</button>
+    <button onclick="selectRole('investor')">Investor</button>
+  </div>
+
+  <div id="profile-setup" style="display: none;">
+    <h2>Profile Setup</h2>
+    <form id="profile-form" onsubmit="submitProfileSetup(event)">
+      <input type="text" id="name" placeholder="Name" required />
+      <textarea id="bio" placeholder="Bio" required></textarea>
+      <div id="additional-fields"></div>
+      <button type="submit">Save Profile</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 0 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the Forms */
+  .container {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    /* overflow: hidden; */
+    position: relative;
+  }
+  
+  /* Input & Textarea Styles */
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Button Styles */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #388e3c;
+  }
+  
+  /* Social Login Buttons */
+  .social-login {
+    padding: 14px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .google-login {
+    background-color: #db4437;
+    color: #fff;
+  }
+  
+  .facebook-login {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .linkedin-login {
+    background-color: #0077b5;
+    color: #fff;
+  }
+  
+  .social-login:hover {
+    opacity: 0.9;
+  }
+  
+  /* Divider Text */
+  p {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+  }
+  
+  p a {
+    color: #4CAF50;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Role Selection Page */
+  #role-selection {
+    display: none;
+    text-align: center;
+  }
+  
+  #role-selection button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background-color: #8bc34a;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #role-selection button:hover {
+    background-color: #7cb342;
+  }
+  
+  #role-selection button:active {
+    background-color: #689f38;
+  }
+  
+  /* Profile Setup Page */
+  #profile-setup {
+    display: none;
+  }
+  
+  #profile-setup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #profile-setup h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #profile-setup input,
+  #profile-setup textarea {
+    margin: 12px 0;
+  }
+  
+  #profile-setup button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #profile-setup button:hover {
+    background-color: #45a049;
+  }
+  
+  #profile-setup button:active {
+    background-color: #388e3c;
+  }
+  
+  #profile-setup .additional-fields input,
+  #profile-setup .additional-fields textarea {
+    margin-bottom: 16px;
+  }
+  
+  /* Subtle Animations */
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    input,
+    textarea,
+    button {
+      font-size: 16px;
+    }
+  
+    .social-login {
+      font-size: 14px;
+    }
+  }
+  
