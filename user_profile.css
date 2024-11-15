@@ -368,6 +368,19 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.like {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.like:hover{
+    background-color: #2980b9;
+}
+
 .cta-btn:hover {
     background-color: #2980b9;
 }

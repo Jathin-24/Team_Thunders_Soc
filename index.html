@@ -10,6 +10,106 @@
     <link rel="import" href="dashboard_afterlogin.html">
   </head>
   <body>
+     <div class="container" id="jathin">
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="Images/logo1.jpeg" alt="Logo" />
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <!-- Nav Links (My Investments, Notifications, Settings) -->
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="investors.html">Investors</a>
+          <a href="#" id="notifications-link">About Us</a>
+          <a href="#" id="settings-link">Contact Us</a>
+        </div>
+        <!-- Notification Link -->
+        <!-- Dropdown Content for Notifications -->
+        <div id="notifications-dropdown" class="dropdown-content">
+          <div class="notification-item">
+            <h3>New Investment Opportunity</h3>
+            <p><strong>Details:</strong> Check out the new startup in AI that just got funded. It's an early-stage investment.</p>
+            <span class="timestamp">10 minutes ago</span>
+          </div>
+          <div class="notification-item">
+            <h3>Profile Updated</h3>
+            <p><strong>Details:</strong> Your profile has been successfully updated with new information.</p>
+            <span class="timestamp">2 hours ago</span>
+          </div>
+          <div class="notification-item">
+            <h3>New Message</h3>
+            <p><strong>Details:</strong> You've received a new message from an investor regarding your startup idea.</p>
+            <span class="timestamp">1 day ago</span>
+          </div>
+          <a href="#" class="view-all">View All Notifications</a>
+        </div>
+
+        <!-- Dropdown Content for Settings -->
+<div id="settings-dropdown" class="dropdown-content">
+  <div class="settings-item">
+      <h3>Investment Preferences</h3>
+      <p><strong>Details:</strong> Customize how you receive investment suggestions, view your portfolio, and set alerts for your investments.</p>
+      <span class="timestamp">Last updated: 1 week ago</span>
+      <a href="#" class="manage-btn">Manage Preferences</a>
+  </div>
+  <div class="settings-item">
+      <h3>Notification Preferences</h3>
+      <p><strong>Details:</strong> Choose the type and frequency of notifications you'd like to receive for your investments, market news, and account activity.</p>
+      <span class="timestamp">Last updated: 2 days ago</span>
+      <a href="#" class="manage-btn">Manage Notifications</a>
+  </div>
+  <div class="settings-item">
+      <h3>Profile Privacy</h3>
+      <p><strong>Details:</strong> Control who can see your investment portfolio, account details, and activity on the platform.</p>
+      <span class="timestamp">Last updated: 3 days ago</span>
+      <a href="#" class="manage-btn">Manage Privacy</a>
+  </div>
+  <div class="settings-item">
+      <h3>Security Settings</h3>
+      <p><strong>Details:</strong> Enable two-factor authentication (2FA), change your password, or review your login history.</p>
+      <span class="timestamp">Last updated: 1 month ago</span>
+      <a href="#" class="manage-btn">Manage Security</a>
+  </div>
+  <div class="settings-item">
+      <h3>Theme Settings</h3>
+      <p><strong>Details:</strong> Switch between light or dark themes for a more personalized experience.</p>
+      <span class="timestamp">Last updated: 1 day ago</span>
+      <a href="#" class="manage-btn">Manage Theme</a>
+  </div>
+  <div class="settings-item">
+      <h3>Email Preferences</h3>
+      <p><strong>Details:</strong> Set your email preferences for receiving investment reports, market updates, and newsletters.</p>
+      <span class="timestamp">Last updated: 2 days ago</span>
+      <a href="#" class="manage-btn">Manage Emails</a>
+  </div>
+  <a href="#" class="view-all">View All Settings</a>
+</div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <div class="profile-pic">
+            <img src="Images/profile_itachi.jpeg" alt="Profile Picture" />
+          </div>
+          <div class="profile-name">
+            <div class="dropdown">
+              <span>John Doe</span>
+              <span>▼</span>
+              <div class="dropdown-content">
+                <a id="view-profile-btn">View Profile</a>
+                <a href="#" id="edit-profile">Edit Profile</a>
+                <a href="index.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Hero Section -->
     <header class="hero">
       <div class="hero-content">
@@ -64,63 +164,63 @@
         </div>
       </div>
     </section>
-
+    <h1>Our Investors</h1>
     <!-- Investor List Container -->
   <div class="investor-list-container">
     <!-- Scrolling Wrapper -->
     <div class="scrolling-wrapper" id="scrolling-wrapper">
       <!-- Investor Cards -->
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Sarah Thompson">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.41.18 PM.jpeg"Sarah Thompson">
         <div class="investor-name">Sarah Thompson</div>
         <div class="investor-role">CEO, Tech Ventures</div>
         <div class="investor-description">Passionate about disruptive tech and startups.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="James Chen">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.43.52 PM.jpeg" alt="James Chen">
         <div class="investor-name">James Chen</div>
         <div class="investor-role">Angel Investor</div>
         <div class="investor-description">Focused on early-stage investments in AI.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Maria Garcia">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.44.17 PM.jpeg" alt="Maria Garcia">
         <div class="investor-name">Maria Garcia</div>
         <div class="investor-role">Managing Partner, VC Firm</div>
         <div class="investor-description">Specializes in fintech and healthcare tech.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Michael Patel">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.45.04 PM.jpeg" alt="Michael Patel">
         <div class="investor-name">Michael Patel</div>
         <div class="investor-role">Venture Partner</div>
         <div class="investor-description">Strong interest in renewable energy solutions.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Linda Wang">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.47.01 PM.jpeg" alt="Linda Wang">
         <div class="investor-name">Linda Wang</div>
         <div class="investor-role">Serial Entrepreneur</div>
         <div class="investor-description">Has founded multiple tech startups.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Robert Kim">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.51.48 PM.jpeg" alt="Robert Kim">
         <div class="investor-name">Robert Kim</div>
         <div class="investor-role">Founder, Green Fund</div>
         <div class="investor-description">Focuses on eco-friendly investments.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="Jessica Lopez">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.57.22 PM.jpeg" alt="Jessica Lopez">
         <div class="investor-name">Jessica Lopez</div>
         <div class="investor-role">Angel Investor</div>
         <div class="investor-description">Expert in SaaS and digital transformation.</div>
       </div>
 
       <div class="investor-card">
-        <img src="https://via.placeholder.com/100" alt="David Singh">
+        <img src="Images/WhatsApp Image 2024-11-15 at 2.51.56 PM.jpeg" alt="David Singh">
         <div class="investor-name">David Singh</div>
         <div class="investor-role">Investment Advisor</div>
         <div class="investor-description">Specializes in blockchain technology.</div>

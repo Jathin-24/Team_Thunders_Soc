@@ -8,8 +8,112 @@
     <script src="https://cdn.jsdelivr.net/npm/ckeditor5@35.0.0/build/ckeditor.js"></script> <!-- For Rich Text Editor -->
 </head>
 <body>
+    <div class="container" id="jathin">
+        <!-- Top Navbar -->
+        <div class="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="Images/logo1.jpeg" alt="Logo" />
+            <span>Idea SargHi</span>
+          </div>
+  
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+          </div>
+  
+          <!-- Nav Links (My Investments, Notifications, Settings) -->
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="my_ideas.html">My Ideas</a>
+            <a href="investors.html">Investors</a>
+            <a href="#" id="notifications-link">Notifications</a>
+            <a href="#" id="settings-link">Settings</a>
+          </div>
+          <!-- Notification Link -->
+          <!-- Dropdown Content for Notifications -->
+          <div id="notifications-dropdown" class="dropdown-content">
+            <div class="notification-item">
+              <h3>New Investment Opportunity</h3>
+              <p><strong>Details:</strong> Check out the new startup in AI that just got funded. It's an early-stage investment.</p>
+              <span class="timestamp">10 minutes ago</span>
+            </div>
+            <div class="notification-item">
+              <h3>Profile Updated</h3>
+              <p><strong>Details:</strong> Your profile has been successfully updated with new information.</p>
+              <span class="timestamp">2 hours ago</span>
+            </div>
+            <div class="notification-item">
+              <h3>New Message</h3>
+              <p><strong>Details:</strong> You've received a new message from an investor regarding your startup idea.</p>
+              <span class="timestamp">1 day ago</span>
+            </div>
+            <a href="#" class="view-all">View All Notifications</a>
+          </div>
+  
+          <!-- Dropdown Content for Settings -->
+  <div id="settings-dropdown" class="dropdown-content">
+    <div class="settings-item">
+        <h3>Investment Preferences</h3>
+        <p><strong>Details:</strong> Customize how you receive investment suggestions, view your portfolio, and set alerts for your investments.</p>
+        <span class="timestamp">Last updated: 1 week ago</span>
+        <a href="#" class="manage-btn">Manage Preferences</a>
+    </div>
+    <div class="settings-item">
+        <h3>Notification Preferences</h3>
+        <p><strong>Details:</strong> Choose the type and frequency of notifications you'd like to receive for your investments, market news, and account activity.</p>
+        <span class="timestamp">Last updated: 2 days ago</span>
+        <a href="#" class="manage-btn">Manage Notifications</a>
+    </div>
+    <div class="settings-item">
+        <h3>Profile Privacy</h3>
+        <p><strong>Details:</strong> Control who can see your investment portfolio, account details, and activity on the platform.</p>
+        <span class="timestamp">Last updated: 3 days ago</span>
+        <a href="#" class="manage-btn">Manage Privacy</a>
+    </div>
+    <div class="settings-item">
+        <h3>Security Settings</h3>
+        <p><strong>Details:</strong> Enable two-factor authentication (2FA), change your password, or review your login history.</p>
+        <span class="timestamp">Last updated: 1 month ago</span>
+        <a href="#" class="manage-btn">Manage Security</a>
+    </div>
+    <div class="settings-item">
+        <h3>Theme Settings</h3>
+        <p><strong>Details:</strong> Switch between light or dark themes for a more personalized experience.</p>
+        <span class="timestamp">Last updated: 1 day ago</span>
+        <a href="#" class="manage-btn">Manage Theme</a>
+    </div>
+    <div class="settings-item">
+        <h3>Email Preferences</h3>
+        <p><strong>Details:</strong> Set your email preferences for receiving investment reports, market updates, and newsletters.</p>
+        <span class="timestamp">Last updated: 2 days ago</span>
+        <a href="#" class="manage-btn">Manage Emails</a>
+    </div>
+    <a href="#" class="view-all">View All Settings</a>
+  </div>
+  
+          <!-- Profile Section -->
+          <div class="profile-section">
+            <div class="profile-pic">
+              <img src="Images/profile_itachi.jpeg" alt="Profile Picture" />
+            </div>
+            <div class="profile-name">
+              <div class="dropdown">
+                <span>John Doe</span>
+                <span>▼</span>
+                <div class="dropdown-content">
+                  <a id="view-profile-btn">View Profile</a>
+                  <a href="#" id="edit-profile">Edit Profile</a>
+                  <a href="index.html">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
-    <div class="container">
+    <div class="idea">
+        <a href="my_ideas.html" id="back"><button  class="cta-btn">Back</button></a>
         <h1>Post a New Idea</h1>
         <form id="idea-form">
             <!-- Idea Title -->
@@ -52,6 +156,7 @@
             <!-- Logo Image Upload -->
             <label for="logo">Logo/Image:</label>
             <input type="file" id="logo" name="logo" accept="image/*">
+            <br>
 
             <button type="submit">Submit Idea</button>
         </form>

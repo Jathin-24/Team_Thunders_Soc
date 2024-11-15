@@ -209,10 +209,11 @@ function Googlelogin() {
   // Check if the entered username matches and if the password is correct
   if (google_email_creator == email && google_password_creator == password) {
     window.location.href = "user_profile.html";
-    alert("hi");
+    alert("Welcome Creator");
   } else if (google_email_investor == email && google_password_investor == password) {
     // Redirect to the dashboard if credentials are valid
     window.location.href = "dashboard_afterlogin.html"; // Dashboard page
+    alert("Welcome Investor");
   }else {
     // Show error message if credentials are invalid
     alert("Invalid credentials");
@@ -228,9 +229,11 @@ function Facebooklogin() {
  if (facebook_email_creator == email && facebook_password_creator == password) {
     
     window.location.href = "user_profile.html";
+    alert("Welcome Creator");
   }else if (facebook_email_investor == email && facebook_password_investor == password) {
     // Redirect to the dashboard if credentials are valid
     window.location.href = "dashboard_afterlogin.html"; // Dashboard page
+    alert("Welcome Investor");
   } else {
     // Show error message if credentials are invalid
     alert("Invalid credentials");
@@ -244,9 +247,11 @@ function LinkedInlogin() {
   // Check if the entered username matches and if the password is correct
  if (linkedin_email_creator == email && linkedin_password_creator == password) {
     window.location.href = "user_profile.html";
+    alert("Welcome Creator");
   }else if (linkedin_email_investor == email && linkedin_password_investor == password) {
     // Redirect to the dashboard if credentials are valid
     window.location.href = "dashboard_afterlogin.html"; // Dashboard page
+    alert("Welcome Investor");
   } else {
     // Show error message if credentials are invalid
     alert("Invalid credentials");
