@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Dashboard</title>
-    <link rel="stylesheet" href="investors.css" />
+    <link rel="stylesheet" href="my_ideas.css" />
   </head>
   <body>
-    <div class="container" id="jathin">
+    <div class="container" >
       <!-- Top Navbar -->
       <div class="navbar">
         <!-- Logo -->
@@ -21,9 +21,10 @@
         </div>
 
         <!-- Nav Links (My Investments, Notifications, Settings) -->
+        <!-- Navbar links (add the "My Investments" link) -->
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="my_investments.html">My Ideas</a>
+          <a href="#" >My Ideas</a>
           <a href="investors.html">Investors</a>
           <a href="#" id="notifications-link">Notifications</a>
           <a href="#" id="settings-link">Settings</a>
@@ -89,7 +90,6 @@
   </div>
   <a href="#" class="view-all">View All Settings</a>
 </div>
-
         <!-- Profile Section -->
         <div class="profile-section">
           <div class="profile-pic">
@@ -101,104 +101,36 @@
               <span>▼</span>
               <div class="dropdown-content">
                 <a id="view-profile-btn">View Profile</a>
-                <a href="#" id="edit-profile">Edit Profile</a>
                 <a href="index.html">Logout</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    <!-- Investors Section -->
-    <section id="investors" class="investor-section">
-        <h2>Meet Our Investors</h2>
-        <div class="container">
-            <!-- Investor Card 1 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+1" alt="Investor 1">
-                <h3>John Doe</h3>
-                <p>John is a venture capitalist with over 20 years of experience in tech investments.</p>
-            </div>
-            
-            <!-- Investor Card 2 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+2" alt="Investor 2">
-                <h3>Jane Smith</h3>
-                <p>Jane is a philanthropist and angel investor who supports social impact ventures.</p>
-            </div>
-            
-            <!-- Investor Card 3 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+3" alt="Investor 3">
-                <h3>Michael Johnson</h3>
-                <p>Michael has a background in finance and invests in sustainable business ventures.</p>
-            </div>
-            
-            <!-- Investor Card 4 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+4" alt="Investor 4">
-                <h3>Amy Lee</h3>
-                <p>Amy is a serial entrepreneur who also invests in startups within the health tech space.</p>
-            </div>
 
-            <!-- Investor Card 5 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+5" alt="Investor 5">
-                <h3>David Kim</h3>
-                <p>David specializes in real estate investments and has a keen eye for high-value properties.</p>
-            </div>
-
-            <!-- Investor Card 6 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+6" alt="Investor 6">
-                <h3>Linda O'Connor</h3>
-                <p>Linda is a strategic investor focused on early-stage technology companies.</p>
-            </div>
-
-            <!-- Investor Card 7 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+7" alt="Investor 7">
-                <h3>Robert White</h3>
-                <p>Robert has a strong background in corporate law and advises on investments in the tech and biotech sectors.</p>
-            </div>
-
-            <!-- Investor Card 8 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+8" alt="Investor 8">
-                <h3>Charlotte Miller</h3>
-                <p>Charlotte has invested in over 50 startups, primarily focusing on AI and machine learning technologies.</p>
-            </div>
-
-            <!-- Investor Card 9 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+9" alt="Investor 9">
-                <h3>James Brown</h3>
-                <p>James focuses on sustainable investments, with a passion for clean energy and environmental impact.</p>
-            </div>
-
-            <!-- Investor Card 10 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+10" alt="Investor 10">
-                <h3>Rebecca Adams</h3>
-                <p>Rebecca specializes in healthcare investments, focusing on digital health and biotechnology innovations.</p>
-            </div>
-
-            <!-- Investor Card 11 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+11" alt="Investor 11">
-                <h3>Victor Garcia</h3>
-                <p>Victor invests in emerging markets and is passionate about increasing financial inclusion globally.</p>
-            </div>
-
-            <!-- Investor Card 12 -->
-            <div class="investor-card">
-                <img src="https://via.placeholder.com/250x200.png?text=Investor+12" alt="Investor 12">
-                <h3>Olivia Johnson</h3>
-                <p>Olivia is an angel investor focusing on fintech and disruptive technologies within the finance sector.</p>
-            </div>
-
-        </div>
-    </section>
-    
+      <!-- Main Feed Area -->
+      <div class="main-feed">
+        <h2>Your Ideas</h2>
+    <div class="post-card">
+        <h3>Idea 1: AI-driven Healthcare</h3>
+        <p>Amount Invested: $100,000</p>
+        <p>Status: Seed Stage</p>
+    </div>
+    <div class="post-card">
+        <h3>Idea 2: Blockchain FinTech</h3>
+        <p>Amount Invested: $250,000</p>
+        <p>Status: Pre-Funding</p>
+    </div>
+    <div class="post-card">
+        <h3>Idea 3: Green Energy</h3>
+        <p>Amount Invested: $500,000</p>
+        <p>Status: Growth Stage</p>
+    </div><a href="user_profile.html">
+    <button id="close-investments-btn" class="cta-btn">Close My Ideas</button>
+    <a href="ideapost.html"><button  class="cta-btn">Upload New Idea</button></a>
+  </a>
+    </div>
+  
     <div id="popup" class="popup-overlay">
         <div id="popup-content">
             <span id="close-popup" class="close-btn">&times;</span>
@@ -221,6 +153,6 @@
         </div>
     </div>
 
-    <script src="investors.js"></script>
+    <script src="my_ideas.js"></script>
   </body>
 </html>
