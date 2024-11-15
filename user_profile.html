@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Dashboard</title>
+    <link rel="stylesheet" href="dashboard_afterlogin.css" />
+  </head>
+  <body>
+    <div class="container" id="jathin">
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="Images/logo1.jpeg" alt="Logo" />
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <!-- Nav Links (My Investments, Notifications, Settings) -->
+        <div class="nav-links">
+          <a href="my_investments.html">My Ideas</a>
+          <a href="investors.html">Investorss;</a>
+          <a href="#" id="notifications-link">Notifications</a>
+          <a href="#" id="settings-link">Settings</a>
+        </div>
+        <!-- Notification Link -->
+        <!-- Dropdown Content for Notifications -->
+        <div id="notifications-dropdown" class="dropdown-content">
+          <div class="notification-item">
+            <h3>New Investment Opportunity</h3>
+            <p><strong>Details:</strong> Check out the new startup in AI that just got funded. It's an early-stage investment.</p>
+            <span class="timestamp">10 minutes ago</span>
+          </div>
+          <div class="notification-item">
+            <h3>Profile Updated</h3>
+            <p><strong>Details:</strong> Your profile has been successfully updated with new information.</p>
+            <span class="timestamp">2 hours ago</span>
+          </div>
+          <div class="notification-item">
+            <h3>New Message</h3>
+            <p><strong>Details:</strong> You've received a new message from an investor regarding your startup idea.</p>
+            <span class="timestamp">1 day ago</span>
+          </div>
+          <a href="#" class="view-all">View All Notifications</a>
+        </div>
+
+        <!-- Dropdown Content for Settings -->
+<div id="settings-dropdown" class="dropdown-content">
+  <div class="settings-item">
+      <h3>Investment Preferences</h3>
+      <p><strong>Details:</strong> Customize how you receive investment suggestions, view your portfolio, and set alerts for your investments.</p>
+      <span class="timestamp">Last updated: 1 week ago</span>
+      <a href="#" class="manage-btn">Manage Preferences</a>
+  </div>
+  <div class="settings-item">
+      <h3>Notification Preferences</h3>
+      <p><strong>Details:</strong> Choose the type and frequency of notifications you'd like to receive for your investments, market news, and account activity.</p>
+      <span class="timestamp">Last updated: 2 days ago</span>
+      <a href="#" class="manage-btn">Manage Notifications</a>
+  </div>
+  <div class="settings-item">
+      <h3>Profile Privacy</h3>
+      <p><strong>Details:</strong> Control who can see your investment portfolio, account details, and activity on the platform.</p>
+      <span class="timestamp">Last updated: 3 days ago</span>
+      <a href="#" class="manage-btn">Manage Privacy</a>
+  </div>
+  <div class="settings-item">
+      <h3>Security Settings</h3>
+      <p><strong>Details:</strong> Enable two-factor authentication (2FA), change your password, or review your login history.</p>
+      <span class="timestamp">Last updated: 1 month ago</span>
+      <a href="#" class="manage-btn">Manage Security</a>
+  </div>
+  <div class="settings-item">
+      <h3>Theme Settings</h3>
+      <p><strong>Details:</strong> Switch between light or dark themes for a more personalized experience.</p>
+      <span class="timestamp">Last updated: 1 day ago</span>
+      <a href="#" class="manage-btn">Manage Theme</a>
+  </div>
+  <div class="settings-item">
+      <h3>Email Preferences</h3>
+      <p><strong>Details:</strong> Set your email preferences for receiving investment reports, market updates, and newsletters.</p>
+      <span class="timestamp">Last updated: 2 days ago</span>
+      <a href="#" class="manage-btn">Manage Emails</a>
+  </div>
+  <a href="#" class="view-all">View All Settings</a>
+</div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <div class="profile-pic">
+            <img src="Images/profile_itachi.jpeg" alt="Profile Picture" />
+          </div>
+          <div class="profile-name">
+            <div class="dropdown">
+              <span>John Doe</span>
+              <span>▼</span>
+              <div class="dropdown-content">
+                <a id="view-profile-btn">View Profile</a>
+                <a href="#" id="edit-profile">Edit Profile</a>
+                <a href="index.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Feed Area -->
+      <div class="main-feed">
+        <div class="post-card">
+          <h2>AI-driven Healthcare Startup</h2>
+          <p>Seeking Investment: $500,000</p>
+          <p>Status: Idea Stage</p>
+          <button class="cta-btn">Invest in this Idea</button>
+        </div>
+        <div class="post-card">
+          <h2>Blockchain-based Financial Services</h2>
+          <p>Seeking Investment: $1,000,000</p>
+          <p>Status: Pre-Funding</p>
+          <button class="cta-btn">Invest in this Idea</button>
+        </div>
+        <div class="post-card">
+          <h2>Green Energy Startup</h2>
+          <p>Seeking Investment: $2,500,000</p>
+          <p>Status: Seed Stage</p>
+          <button class="cta-btn">Invest in this Idea</button>
+        </div>
+        <div class="post-card">
+          <h2>AI-powered E-commerce Platform</h2>
+          <p>Seeking Investment: $750,000</p>
+          <p>Status: Pre-Funding</p>
+          <button class="cta-btn">Invest in this Idea</button>
+        </div>
+        <div class="post-card">
+          <h2>Blockchain for Supply Chain Management</h2>
+          <p>Seeking Investment: $1,200,000</p>
+          <p>Status: Idea Stage</p>
+          <button class="cta-btn">Invest in this Idea</button>
+        </div>
+        <!-- Additional Creative Post-Cards -->
+
+        <div class="post-card creative-card">
+          <div class="image-background">
+            <img src="Images/tech_startup.jpg" alt="Tech Startup" />
+          </div>
+          <h2>Quantum Computing for Data Security</h2>
+          <p>Seeking Investment: $5,000,000</p>
+          <p>Status: Concept Stage</p>
+          <button class="cta-btn primary-btn">Learn More</button>
+        </div>
+
+        <div class="post-card creative-card">
+          <div class="tagline">
+            <span class="tagline-text">Disrupting the Future of Transportation</span>
+          </div>
+          <h2>Electric Autonomous Vehicles</h2>
+          <p>Seeking Investment: $10,000,000</p>
+          <p>Status: Prototype</p>
+          <button class="cta-btn secondary-btn">Invest in Innovation</button>
+        </div>
+
+        <div class="post-card creative-card">
+          <div class="highlight-box">
+            <h3>Winner of the Global Innovation Award</h3>
+          </div>
+          <h2>Smart Wearable Health Tech</h2>
+          <p>Seeking Investment: $750,000</p>
+          <p>Status: Market Testing</p>
+          <button class="cta-btn">Invest in HealthTech</button>
+        </div>
+
+        <div class="post-card creative-card">
+          <div class="quote-box">
+            <blockquote>"Changing how we think about food."</blockquote>
+          </div>
+          <h2>Plant-Based Meat Alternative</h2>
+          <p>Seeking Investment: $3,000,000</p>
+          <p>Status: Scaling Production</p>
+          <button class="cta-btn primary-btn">Join the Revolution</button>
+        </div>
+
+        <div class="post-card creative-card">
+          <div class="highlight">
+            <h4>Featured in TechCrunch</h4>
+          </div>
+          <h2>AI-Driven Mental Health Platform</h2>
+          <p>Seeking Investment: $1,500,000</p>
+          <p>Status: Beta Testing</p>
+          <button class="cta-btn">Invest in Wellness</button>
+        </div>
+        <!-- Example Post Card with Image -->
+<div class="post-card creative-card">
+    <div class="image-background">
+        <img src="https://via.placeholder.com/800x400" alt="Startup Image" />
+    </div>
+    <h2>AI-driven Healthcare Startup</h2>
+    <p>Seeking Investment: $500,000</p>
+    <p>Status: Idea Stage</p>
+    <button class="cta-btn primary-btn">Invest in this Idea</button>
+</div>
+
+<!-- Another Example Post Card with Image -->
+<div class="post-card creative-card">
+    <div class="image-background">
+        <img src="https://via.placeholder.com/800x400" alt="Blockchain Financial Services" />
+    </div>
+    <h2>Blockchain-based Financial Services</h2>
+    <p>Seeking Investment: $1,000,000</p>
+    <p>Status: Pre-Funding</p>
+    <button class="cta-btn primary-btn">Invest in this Idea</button>
+</div>
+      </div>
+    </div>
+
+    <!-- Modal for Idea Details -->
+    <div id="idea-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Detailed Startup Idea</h2>
+        <p>
+          <strong>Description:</strong> Elevator pitch, problem, target market,
+          revenue model, and traction.
+        </p>
+        <p><strong>Founder:</strong> John Doe</p>
+        <p><strong>Investor Interest:</strong> 5 investors</p>
+        <p><strong>Funding Goal:</strong> $500,000 raised of $1,000,000 goal</p>
+        <button>Invest</button>
+        <button>Message the Founder</button>
+      </div>
+    </div>
+    
+    <div id="popup" class="popup-overlay">
+        <div id="popup-content">
+            <span id="close-popup" class="close-btn">&times;</span>
+            <div class="profile-info">
+                <h2 id="name">John Doe</h2>
+                <p><strong>Date of Birth:</strong> <span id="dob">January 1, 1980</span></p>
+                <p><strong>Location:</strong> <span id="location">San Francisco, CA</span></p>
+                <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+                <p><strong>Job Title:</strong> <span id="job-title">Venture Capitalist</span></p>
+                <p><strong>Company:</strong> <span id="company">ABC Ventures</span></p>
+                <p><strong>Investments:</strong> <span id="investments">Technology Startups, FinTech</span></p>
+                <p><strong>Biography:</strong> <span id="bio">John is an experienced investor focusing on early-stage tech startups. He has a passion for supporting innovative businesses and helping them grow.</span></p>
+            </div>
+
+            <!-- Profile Image Section -->
+            <div class="profile-image">
+                <img id="profile-pic" src="Images/profile_itachi.jpeg" alt="Investor Photo">
+                <!--<input type="file" id="image-upload" accept="image/*" onchange="previewImage()" />-->
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard_afterlogin.js"></script>
+  </body>
+</html>

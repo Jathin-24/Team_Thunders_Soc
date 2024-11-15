@@ -254,12 +254,6 @@ body {
     background-color: #34495e;
 }
 
-/* For accessibility - :focus states */
-.navbar .nav-links a:focus, .navbar .profile-name:focus {
-    outline: 2px solid #3498db; /* Focus outline for accessibility */
-    background-color: #34495e;
-}
-
 /* Profile Section */
 .navbar .profile-section {
     display: flex;
@@ -331,334 +325,6 @@ body {
     display: block;
     margin: 10px;
 }
-
-/* Main Feed Area */
-.main-feed {
-    margin-top: 80px; /* Space for navbar */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    max-width: 1200px; /* Max width to limit the width of the feed */
-    width: 100%;
-}
-
-/* Post Card Styles */
-.post-card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.post-card h2 {
-    margin-top: 0;
-}
-
-/* Hover Effect for Post Cards */
-.post-card:hover {
-    transform: translateY(-5px);
-    transform: translateX(10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* CTA Button */
-.cta-btn {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #2980b9;
-}
-
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    overflow: auto;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    /* background-color: violet; */
-}
-
-.modal.show {
-    display: block;
-    opacity: 1;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    margin: 10% auto;
-    width: 80%;
-    border-radius: 5px;
-    position: relative;
-}
-
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .navbar .search-bar input {
-        width: 250px; /* Shrink the search bar on smaller screens */
-    }
-    
-    .navbar .nav-links a {
-        font-size: 12px; /* Adjust nav link size */
-    }
-    
-    .main-feed {
-        padding: 15px; /* Adjust feed padding for mobile */
-    }
-
-    .post-card, .creative-card {
-        margin-bottom: 15px; /* Reduce margin on mobile */
-    }
-}
-
-/* Post Card Styles with Image */
-.post-card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensure no content overflows */
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Image Section */
-.post-card .image-background img {
-    width: 100%; /* Full width of the container */
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the area without distorting */
-    border-radius: 5px;
-    margin-bottom: 15px; /* Space between the image and text */
-}
-
-/* Title */
-.post-card h2 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #2c3e50;
-    font-weight: bold;
-}
-
-/* Description and Status */
-.post-card p {
-    font-size: 14px;
-    color: #7f8c8d;
-    margin: 5px 0;
-}
-
-/* CTA Button */
-.cta-btn {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #2980b9;
-}
-
-/* Hover Effect for Post Cards */
-.post-card:hover {
-    transform: translateY(-5px);
-    transform: translateX(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Creative Card Styles */
-.creative-card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Tagline Section */
-.creative-card .tagline {
-    background-color: #f39c12;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.creative-card .tagline-text {
-    font-weight: bold;
-}
-
-/* Quote Box */
-.creative-card .quote-box {
-    border-left: 5px solid #3498db;
-    padding-left: 15px;
-    font-style: italic;
-    color: #7f8c8d;
-    margin-bottom: 15px;
-}
-
-/* Highlight Box for Special Mentions */
-.creative-card .highlight-box {
-    background-color: #ecf0f1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #2c3e50;
-    text-align: center;
-}
-
-/* Buttons for Creative Cards */
-.creative-card .cta-btn.primary-btn {
-    background-color: #3498db;
-}
-
-.creative-card .cta-btn.primary-btn:hover {
-    background-color: #2980b9;
-}
-
-.creative-card .cta-btn.secondary-btn {
-    background-color: #e67e22;
-}
-
-.creative-card .cta-btn.secondary-btn:hover {
-    background-color: #d35400;
-}
-
-.creative-card .cta-btn {
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover Effects for Creative Cards */
-.creative-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Profile Modal Styles */
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); semi-transparent background
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 8px;
-}
-
-.close {
-  color: red;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-profile:hover,
-.close-profile:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-*/
-#profile-modal .modal-content {
-  transition: transform 0.3s ease-in-out;
-} 
-
-
-/* Popup overlay
-.popup-overlay {
-    display: none; Initially hidden
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); Semi-transparent background
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-Popup content box
-#popup-content {
-    background-color: white;
-    padding: 40px;
-    margin: 10% auto;
-    width: 80%;
-    border-radius: 5px;
-    position: relative;
-}
-
-Close button
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    color: black;
-}
-
-Close button hover effect
-.close-btn:hover,
-.close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 
 
 /* Popup overlay */
@@ -766,4 +432,61 @@ Close button hover effect
     color: #333;
 }
 
+.investor-section {
+    padding: 30px;
+    text-align: center;
+}
 
+.investor-section h2 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    padding-top: 40px;
+}
+
+.investor-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.investor-card:hover {
+    transform: scale(1.05);
+}
+
+.investor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.investor-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.investor-card p {
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
